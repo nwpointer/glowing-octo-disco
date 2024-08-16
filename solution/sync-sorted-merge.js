@@ -4,6 +4,8 @@ const { indexOf } = require("lodash");
 
 // Print all entries, across all of the sources, in chronological order.
 
+// solution very similar to the async version, but without the async/await, see async-sorted-merge.js for more comments
+
 module.exports = (logSources, printer) => {
   // Greedy solution
   const nextEntries = logSources.map(source => source.pop());
